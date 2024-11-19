@@ -1,12 +1,9 @@
 {
   "name": "gatsby-starter-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Le Cèdre bleu",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Witold <witoldwrob@protonmail.com>",
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.0.8",
