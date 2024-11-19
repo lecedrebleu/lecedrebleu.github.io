@@ -94,7 +94,6 @@ module.exports = {
                     title
                     date
                     description
-                    image
                   }
                 }
               }
