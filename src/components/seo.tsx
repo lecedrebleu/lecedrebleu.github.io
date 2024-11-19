@@ -24,9 +24,6 @@ const Seo = ({ description, title, children }: PageSEOProps) => {
           siteMetadata {
             title
             description
-            social {
-              twitter
-            }
           }
         }
       }
