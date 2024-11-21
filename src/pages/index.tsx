@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
+import Newsletter from "../components/newsletter";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`;
@@ -22,6 +23,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Newsletter />
       <ol style={{ listStyle: `none` }}>
         {posts.map((post) => {
           const title = post.frontmatter.title || post.fields.slug;
