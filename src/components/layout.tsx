@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "gatsby";
+import Matomo from "./matomo";
 
 const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === "/";
@@ -21,6 +22,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <Matomo />
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
