@@ -6,6 +6,7 @@
 
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+const get = require("lodash/get");
 
 // Define the template for blog post
 const blogPost = path.resolve(`./src/templates/blog-post.tsx`);
@@ -84,7 +85,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
  * @type {import('gatsby').GatsbyNode['createSchemaCustomization']}
  */
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
+  const { createTypes, createFieldExtension } = actions;
 
   // Explicitly define the siteMetadata {} object
   // This way those will always be defined even if removed from gatsby-config.js
@@ -123,4 +124,25 @@ exports.createSchemaCustomization = ({ actions }) => {
       slug: String
     }
   `);
+
+  // Add isFuture to MarkdownRemark graphql
+
+  const isFuture = (fieldName) => (source) => {
+    const date = get(source, fieldName);
+    return new Date(date) > new Date();
+  };
+
+  createFieldExtension({
+    name: "isFuture",
+    args: { fieldName: "String!" },
+    extend({ fieldName }) {
+      return { resolve: isFuture(fieldName) };
+    },
+  });
+
+  createTypes(
+    `type MarkdownRemark implements Node {
+        isFuture: Boolean! @isFuture(fieldName: "frontmatter.date")
+      }`
+  );
 };
