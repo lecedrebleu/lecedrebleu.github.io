@@ -27,7 +27,9 @@ const BlogPostTemplate = ({
           <p>{post.frontmatter.date}</p>
         </header>
         <section
-          dangerouslySetInnerHTML={{ __html: post.frontmatter.description }}
+          dangerouslySetInnerHTML={{
+            __html: post.html || post.frontmatter.description,
+          }}
           itemProp="articleBody"
         />
         <br></br>
