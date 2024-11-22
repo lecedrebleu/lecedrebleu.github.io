@@ -7,8 +7,9 @@ reservationEnabled: false
 ---
 
 20h : Ouverture des portes<br>
-23h : Fin des concerts<br>
-Participation libre
+23h : Fin des concerts<br><br>
+Prix libre (conseillé 5€, en fonction de vos moyens).<br>
+Buvette sur place. Pas de restauration.<b>
 
 ## JM Reich
 
