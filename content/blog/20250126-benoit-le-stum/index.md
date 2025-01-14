@@ -10,3 +10,8 @@ C’est dans le cap Sizun que le pianiste a choisi de poser son sac il y a envir
 Après six années d’introspection lui est venue l’envie de renouer avec le public et c’est ici, au Cèdre bleu, qu’auront lieu ces retrouvailles.
 
 Il vous proposera un répertoire éclectique - Scriabine, Chopin , Debussy, Ravel.
+
+18h : Ouverture des portes<br>
+Entracte<br>
+Prix libre (conseillé 10€, en fonction de vos moyens).<br>
+Buvette sur place. Pas de restauration.<b>
