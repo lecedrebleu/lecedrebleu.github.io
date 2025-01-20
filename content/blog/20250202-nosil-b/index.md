@@ -1,6 +1,6 @@
 ---
 title: Nosil B
-date: "2025-01-26T18:00:00"
+date: "2025-02-02T18:00:00"
 tags: ["CONCERT", "RAP"]
 shortDescription: "Rap acoustique et intimiste."
 ---
