@@ -4,6 +4,7 @@ date: "2025-01-26T18:00:00"
 tags: ["CONCERT", "PIANO"]
 shortDescription: "Sous les mains du pianiste, un répertoire éclectique : Scriabine, Chopin , Debussy, Ravel."
 reservationEnabled: true
+image: affiche.png
 ---
 
 C’est dans le cap Sizun que le pianiste a choisi de poser son sac il y a environ deux décennies. Il a eu souvent l’occasion de s’y produire, en récital ou en Musique de Chambre.

@@ -4,6 +4,7 @@ date: "2024-12-04T20:00:00"
 tags: ["CONCERT"]
 shortDescription: "Synthés modulaires. Autotune & paillettes."
 reservationEnabled: false
+image: affiche.png
 ---
 
 20h : Ouverture des portes<br>

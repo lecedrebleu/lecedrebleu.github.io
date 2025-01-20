@@ -3,6 +3,7 @@ title: Nosil B
 date: "2025-02-02T18:00:00"
 tags: ["CONCERT", "RAP"]
 shortDescription: "Rap acoustique et intimiste."
+image: affiche.png
 ---
 
 Nosil B, c'est une ballade en forêt, une page d'un journal intime, une histoire qu'on raconte avant de dormir, un air de guitare au coin du feu.
