@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import Matomo from "./matomo";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === "/";
@@ -8,14 +9,22 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
-        <Link to="/">{title}</Link>
-      </h1>
+      <div className="main-heading">
+        <div className="logo">
+          <Link to="/">
+            <StaticImage
+              src="../images/logo.png"
+              alt="Le Cèdre bleu"
+              width={150}
+            />
+          </Link>
+        </div>
+      </div>
     );
   } else {
     header = (
       <Link className="header-link-home" to="/">
-        {title}
+        <StaticImage src="../images/logo.png" alt="Le Cèdre bleu" width={80} />
       </Link>
     );
   }

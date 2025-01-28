@@ -13,7 +13,6 @@ interface Post {
     tags: string[];
     shortDescription?: string;
     description?: string;
-    image?: string;
     reservationEnabled?: boolean;
   };
   fields: {
@@ -73,7 +72,7 @@ const BlogIndex = ({ data, location }: PageProps<BlogIndexProps>) => {
       <Newsletter />
       {futureEvents && futureEvents.length > 0 && (
         <div>
-          <h3>Prochains évènements</h3>
+          <h1>Programmation</h1>
           <ol style={{ listStyle: `none` }}>
             {futureEvents.map((post) => (
               <li key={post.fields.slug}>
