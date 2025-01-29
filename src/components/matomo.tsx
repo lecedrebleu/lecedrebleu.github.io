@@ -9,8 +9,7 @@ export default function Matomo() {
         g = d.createElement("script"),
         s = d.getElementsByTagName("script")[0];
       g.async = true;
-      g.src =
-        "https://cdn.matomo.cloud/lecedrebleupx.matomo.cloud/container_680TaRAp.js";
+      g.src = "https://matomo.lecedrebleu-px.fr/js/container_ZVSN045U.js";
       s.parentNode?.insertBefore(g, s);
     }
   }, []);
