@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }: PageProps<BlogIndexProps>) => {
     futureEvents = [];
   } else {
     [futureEvents, pastEvents] = [
-      posts.slice(0, beforeNowIndex),
+      posts.slice(0, beforeNowIndex).reverse(),
       posts.slice(beforeNowIndex),
     ];
   }
