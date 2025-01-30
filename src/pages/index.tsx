@@ -4,6 +4,13 @@ import { Link, PageProps, graphql } from "gatsby";
 import Layout from "../components/layout";
 import Seo from "../components/seo";
 import Newsletter from "../components/newsletter";
+import { GatsbyImage, getImage, ImageDataLike } from "gatsby-plugin-image";
+
+interface PostImage {
+  childImageSharp: {
+    gatsbyImageData: ImageDataLike;
+  };
+}
 
 interface Post {
   excerpt: string;
@@ -14,6 +21,7 @@ interface Post {
     shortDescription?: string;
     description?: string;
     reservationEnabled?: boolean;
+    image?: PostImage;
   };
   fields: {
     slug: string;
@@ -86,6 +94,7 @@ const BlogIndex = ({ data, location }: PageProps<BlogIndexProps>) => {
                     post.frontmatter.description ||
                     post.excerpt
                   }
+                  image={post.frontmatter.image}
                 />
               </li>
             ))}
@@ -108,6 +117,7 @@ const BlogIndex = ({ data, location }: PageProps<BlogIndexProps>) => {
                     post.frontmatter.description ||
                     post.excerpt
                   }
+                  image={post.frontmatter.image}
                 />
               </li>
             ))}
@@ -124,40 +134,55 @@ function EventItem({
   tags,
   date,
   description,
+  image,
 }: {
   title: string;
   slug: string;
   tags: string[];
   date: Date;
   description: string;
+  image?: PostImage;
 }) {
+  const featuredImg = getImage(image?.childImageSharp?.gatsbyImageData || null);
   return (
     <article
-      className="post-list-item"
+      className="post-list-item-container"
       itemScope
-      itemType="http://schema.org/Article"
+      itemType="https://schema.org/Event"
     >
-      <header>
-        <h2>
-          <Link to={slug} itemProp="url">
-            <span itemProp="headline">{title}</span>
+      {featuredImg && (
+        <div className="post-list-item-image">
+          <Link to={slug}>
+            <GatsbyImage
+              image={featuredImg}
+              alt={`Affiche de l'événement ${title}`}
+            />
           </Link>
-        </h2>
-        <p>
-          <small>{formatter.format(date)}</small>
-        </p>
-        <p>
-          <small>{tags.join(" / ")}</small>
-        </p>
-      </header>
-      <section>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: description,
-          }}
-          itemProp="description"
-        />
-      </section>
+        </div>
+      )}
+      <div className="post-list-item">
+        <header>
+          <h2>
+            <Link to={slug} itemProp="url">
+              <span itemProp="name">{title}</span>
+            </Link>
+          </h2>
+          <p>
+            <small itemProp="startDate">{formatter.format(date)}</small>
+          </p>
+          <p>
+            <small itemProp="keywords">{tags.join(" / ")}</small>
+          </p>
+        </header>
+        <section>
+          <p
+            dangerouslySetInnerHTML={{
+              __html: description,
+            }}
+            itemProp="description"
+          />
+        </section>
+      </div>
     </article>
   );
 }
@@ -190,6 +215,11 @@ export const pageQuery = graphql`
           description
           tags
           shortDescription
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 200)
+            }
+          }
         }
       }
     }
