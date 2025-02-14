@@ -14,4 +14,4 @@ de quoi amener du soleil en plein coeur de l’hiver !
 
 20h00 : Ouverture des portes.<br>
 Prix libre (conseillé 10€)<br>
-Buvette sur place. Pas de restauration.<b>
+Buvette sur place. Restauration : quelques sandwichs sur place.<b>
