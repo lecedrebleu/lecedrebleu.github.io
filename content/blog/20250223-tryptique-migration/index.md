@@ -16,5 +16,5 @@ notamment de De sang et de Lumière, avec la pièce Fondre de Guillaume Poix, po
 Le spectacle sera suivi d'une rencontre avec SOS Méditerannée et d'une diffusion d'un documentaire.
 
 18h00 : Ouverture des portes.<br>
-Prix libre.<br>
+Prix : 8€.<br>
 Buvette sur place. Pas de restauration.<b>
