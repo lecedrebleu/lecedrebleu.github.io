@@ -1,5 +1,5 @@
 ---
-title: Tryptique de migration - Cie Tout le silence à vivre
+title: "[ANNULÉ] Tryptique de migration - Cie Tout le silence à vivre"
 date: "2025-02-23T18:00:00"
 tags: ["THÉÂTRE"]
 shortDescription: "Exploration des voix sur le sujet de la migration. Le spectacle sera suivi d'une rencontre avec SOS Méditerannée et d'une diffusion d'un documentaire."
