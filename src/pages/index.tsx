@@ -145,11 +145,7 @@ function EventItem({
 }) {
   const featuredImg = getImage(image?.childImageSharp?.gatsbyImageData || null);
   return (
-    <article
-      className="post-list-item-container"
-      itemScope
-      itemType="https://schema.org/Event"
-    >
+    <article className="post-list-item-container">
       {featuredImg && (
         <div className="post-list-item-image">
           <Link to={slug}>
@@ -163,15 +159,15 @@ function EventItem({
       <div className="post-list-item">
         <header>
           <h2>
-            <Link to={slug} itemProp="url">
-              <span itemProp="name">{title}</span>
+            <Link to={slug}>
+              <span>{title}</span>
             </Link>
           </h2>
           <p>
-            <small itemProp="startDate">{formatter.format(date)}</small>
+            <small>{formatter.format(date)}</small>
           </p>
           <p>
-            <small itemProp="keywords">{tags.join(" / ")}</small>
+            <small>{tags.join(" / ")}</small>
           </p>
         </header>
         <section>
@@ -179,7 +175,6 @@ function EventItem({
             dangerouslySetInnerHTML={{
               __html: description,
             }}
-            itemProp="description"
           />
         </section>
       </div>
