@@ -4,6 +4,7 @@ date: "2025-03-30T18:00:00"
 tags: ["CONCERT"]
 shortDescription: "Chopin autrement : un récital intimiste autour des Mazurkas."
 reservationEnabled: true
+image: affiche.png
 ---
 
 Le pianiste Andoni Aguirre propose un récital consacré aux mazurkas de Chopin. Bien plus que des danses polonaises stylisées : elles sont le cœur battant d’un monde intime où se mêlent nostalgie, audace harmonique et liberté rythmique. Ce récital est une invitation à explorer cette facette essentielle de l’œuvre de Chopin, souvent éclipsée par ses nocturnes ou ses ballades, mais pourtant fondatrice de son langage pianistique.

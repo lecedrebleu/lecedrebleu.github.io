@@ -4,6 +4,7 @@ date: "2025-03-22T20:30:00"
 tags: ["CONCERT", "SPECTACLE"]
 shortDescription: "Un spectacle musical et théâtral pour redécouvrir Boris Vian, entre poésie, jazz et irrévérence."
 reservationEnabled: true
+image: affiche.png
 ---
 
 Poète de l’absurde, écrivain engagé, musicien passionné, Boris Vian occupe une place singulière dans la culture française. Monsieur Boris – La Java des Bombes Atomiques propose une immersion dans son univers foisonnant, entre théâtre, musique et poésie.
