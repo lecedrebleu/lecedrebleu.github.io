@@ -1,6 +1,6 @@
 ---
 title: "Vivó tín’sá - sous l’arbre à palabres"
-date: "2025-04-18T20:30:00"
+date: "2025-04-18T20:00:00"
 tags: ["CONTE", "MUSIQUE"]
 shortDescription: "Contes et musiques du Bénin sous le Cèdre bleu."
 reservationEnabled: true

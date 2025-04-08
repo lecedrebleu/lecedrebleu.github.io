@@ -1,6 +1,6 @@
 ---
 title: "3 propositions : Musique, théâtre et poésie"
-date: "2025-04-12T20:30:00"
+date: "2025-04-12T20:00:00"
 tags: ["CONCERT", "SPECTACLE"]
 shortDescription: "Ballades et voix polyphoniques. Poésie et contrebasse. Cabaret érotique féministe."
 reservationEnabled: true
