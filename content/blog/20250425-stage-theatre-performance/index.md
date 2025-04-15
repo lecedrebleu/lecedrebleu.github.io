@@ -3,7 +3,7 @@ title: "Se raconter : intime et politique"
 date: "2025-04-25T09:00:00"
 tags: ["STAGE", "THÉÂTRE"]
 shortDescription: "Stage de trois jours pour explorer l'art de se raconter sur scène et révéler la dimension politique des récits personnels."
-image: affiche.ong
+image: affiche.png
 ---
 
 Du vendredi 25 au dimanche 27 avril.
