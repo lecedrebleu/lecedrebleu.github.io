@@ -11,6 +11,8 @@ Un voyage en mots et en sons avec Crespin Kpitiki, [griot](https://fr.wikipedia.
 
 Héritier d'une longue lignée de griots, Crespin Kpitiki est à la fois conteur, musicien et passeur de mémoire. À travers ses récits, il fait revivre les personnages et les légendes de son pays. Sa parole, rythmée par les percussions, fait danser les histoires autant qu’elle les transmet.
 
+Martial Whendo, musicien tromboniste arrangeur, apporte une dimension contemporaine aux récits ancestraux. Son trombone dialogue avec la voix de Crespin, tantôt accompagnant, tantôt répondant, créant ainsi un pont entre tradition orale et modernité musicale.
+
 Prix libre
 
 Ouverture des portes : 20h00
