@@ -3,7 +3,7 @@ title: "13h13, la minute d'après"
 date: "2025-05-10T20:30:00"
 tags: ["CONCERT"]
 shortDescription: "Le théâtre, le chant et le rap se mélangent..."
-image: affiche.png
+image: affiche.jpg
 ---
 
 Le théâtre, le chant et le rap se mélangent pour donner forme à 40 minutes de spectacle intimiste.
