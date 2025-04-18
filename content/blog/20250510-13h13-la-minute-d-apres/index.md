@@ -1,7 +1,7 @@
 ---
 title: "13h13, la minute d'après"
 date: "2025-05-10T20:00:00"
-tags: ["CONCERT"]
+tags: ["CONCERT", "SPECTACLE"]
 shortDescription: "Le théâtre, le chant et le rap se mélangent..."
 image: affiche.jpg
 ---
