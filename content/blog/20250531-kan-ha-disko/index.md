@@ -2,7 +2,7 @@
 title: "Kan Ha Disko"
 date: "2025-05-31T17:00:00"
 tags: ["MUSIQUE", "GROOVE"]
-shortDescription: "Dançons avec deux chineurs de disques et amoureux du groove."
+shortDescription: "Dansons avec deux chineurs de disques et amoureux du groove."
 image: affiche.png
 ---
 
