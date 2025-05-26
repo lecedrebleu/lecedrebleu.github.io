@@ -44,3 +44,4 @@ Plus d’infos et des vidéos sur les sites : http://claudianottale.blogspot.com
 ## Tarif
 
 150 €
+Sur réservation : clnottale@yahoo.fr
