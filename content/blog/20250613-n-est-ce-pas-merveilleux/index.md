@@ -1,8 +1,8 @@
 ---
-title: "La relation de couple dans tous ses états… Et toutes ses étapes !"
+title: "Duo de clown : « N’est-ce pas merveilleux ? »"
 date: "2025-06-13T19:00:00"
 tags: ["SPECTACLE", "CLOWN"]
-shortDescription: "Des contes, de la danse, de la musique... Une belle manière de se sentir pousser des ailes."
+shortDescription: "La relation de couple dans tous ses états… Et toutes ses étapes !"
 image: affiche.png
 ---
 
