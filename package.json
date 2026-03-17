@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Witold <witoldwrob@protonmail.com>",
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.0.17",
+    "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource/merriweather": "^5.2.11",
     "gatsby": "^5.14.0",
     "gatsby-plugin-feed": "^5.14.0",
