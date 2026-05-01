@@ -38,4 +38,6 @@ Ouvert à toutes et tous.
 
 Vendredi 15 mai 2026 à 19h.
 
+Restauration & buvette sur place.
+
 Le Cèdre bleu, 24bis boulevard général de Gaulle, 29790 Pont-Croix.
