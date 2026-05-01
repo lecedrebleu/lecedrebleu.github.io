@@ -236,6 +236,50 @@ a:focus {
   text-decoration: none;
 }
 
+.event-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-3);
+  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8);
+}
+
+.event-button {
+  align-items: center;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  color: white;
+  display: inline-flex;
+  font-family: var(--font-heading);
+  font-weight: var(--fontWeight-bold);
+  justify-content: center;
+  line-height: 1.2;
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.event-button:hover,
+.event-button:focus {
+  background: #526f84;
+  border-color: #526f84;
+  color: white;
+  text-decoration: none;
+}
+
+.event-button-secondary {
+  background: white;
+  color: var(--color-primary);
+}
+
+.event-button-secondary:hover,
+.event-button-secondary:focus {
+  background: var(--color-accent);
+  border-color: var(--color-primary);
+  color: var(--color-heading);
+}
+
 /* Custom classes */
 
 .global-wrapper {
@@ -342,5 +386,11 @@ a:focus {
   ul,
   ol {
     list-style-position: inside;
+  }
+  .event-actions {
+    flex-direction: column;
+  }
+  .event-button {
+    width: 100%;
   }
 }
