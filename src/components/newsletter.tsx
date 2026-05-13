@@ -1,10 +1,9 @@
+"use client";
+
 import * as React from "react";
-import { Widget } from "@typeform/embed-react";
-import { Script } from "gatsby";
+import Script from "next/script";
 
 export default function Newsletter() {
-  // pages/index.tsx
-
   return (
     <div>
       <h3>Inscription à la liste de diffusion du Cèdre bleu</h3>
@@ -21,7 +20,7 @@ export default function Newsletter() {
 
       <Script
         src="https://tally.so/widgets/embed.js"
-        onLoad={() => (window as any).Tally.loadEmbeds()}
+        onLoad={() => (window as any).Tally?.loadEmbeds()}
       />
     </div>
   );
