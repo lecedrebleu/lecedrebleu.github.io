@@ -1,30 +1,31 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import Link from "next/link";
 import Matomo from "./matomo";
-import { StaticImage } from "gatsby-plugin-image";
+import { siteMetadata } from "../../lib/site";
 
-const Layout = ({ location, title, children }) => {
-  const isRootPath = location.pathname === "/";
+const Layout = ({
+  isRootPath = false,
+  children,
+}: {
+  isRootPath?: boolean;
+  children: React.ReactNode;
+}) => {
   let header;
 
   if (isRootPath) {
     header = (
       <div className="main-heading">
         <div className="logo">
-          <Link to="/">
-            <StaticImage
-              src="../images/logo.png"
-              alt="Le Cèdre bleu"
-              width={150}
-            />
+          <Link href="/">
+            <img src="/logo.png" alt={siteMetadata.title} width={150} />
           </Link>
         </div>
       </div>
     );
   } else {
     header = (
-      <Link className="header-link-home" to="/">
-        <StaticImage src="../images/logo.png" alt="Le Cèdre bleu" width={80} />
+      <Link className="header-link-home" href="/">
+        <img src="/logo.png" alt={siteMetadata.title} width={80} />
       </Link>
     );
   }
@@ -35,9 +36,9 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        Le Cèdre bleu | contact@lecedrebleu-px.fr
+        {siteMetadata.title} | {siteMetadata.contactEmail}
         <br />
-        24bis boulevard général de Gaulle, 29790 Pont-Croix
+        {siteMetadata.address}
       </footer>
     </div>
   );

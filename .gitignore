@@ -26,20 +26,18 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-integration-tests/gatsby-cli/execution-folder/*
 *.un~
 dist
 bin/published.js
 
 # Build Path of Test Fixtures
 test/**/public
-.gatsby-context.js
 .DS_Store
-public/
-node_modules/
-e2e-tests/gatsby-pnp/
-__diff_output__/
+.next/
+out/
 .cache/
+node_modules/
+__diff_output__/
 .netlify
 .Rhistory
 

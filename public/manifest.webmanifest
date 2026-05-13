@@ -1,0 +1,14 @@
+{
+  "name": "Le Cèdre bleu",
+  "short_name": "Le Cèdre bleu",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/logo-small.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

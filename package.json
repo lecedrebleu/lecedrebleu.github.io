@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "lecedrebleu",
   "private": true,
   "description": "Le Cèdre bleu",
   "version": "0.1.0",
@@ -7,43 +7,36 @@
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
     "@fontsource/merriweather": "^5.2.11",
-    "gatsby": "^5.16.1",
-    "gatsby-plugin-feed": "^5.14.0",
-    "gatsby-plugin-image": "^3.14.0",
-    "gatsby-plugin-manifest": "^5.14.0",
-    "gatsby-plugin-sharp": "^5.14.0",
-    "gatsby-remark-images": "^7.15.0",
-    "gatsby-remark-prismjs": "^7.14.0",
-    "gatsby-remark-responsive-iframe": "^6.14.0",
-    "gatsby-source-filesystem": "^5.15.0",
-    "gatsby-transformer-remark": "^6.14.0",
-    "gatsby-transformer-sharp": "^5.14.0",
-    "lodash": "4.17",
+    "gray-matter": "^4.0.3",
+    "marked": "^16.4.2",
+    "next": "^16.0.10",
     "prismjs": "^1.29.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
+    "@types/node": "^24.10.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "gh-pages": "^6.3.0",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "typescript": "^5.9.3"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
+  "homepage": "https://lecedrebleu.github.io/",
+  "keywords": [],
   "license": "0BSD",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/lecedrebleu/lecedrebleu.github.io.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "build": "next build",
+    "clean": "rm -rf .next out",
+    "deploy": "npm run build && gh-pages -d out",
+    "develop": "next dev",
+    "dev": "next dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "gatsby develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "start": "next dev",
+    "test": "npm run build"
   }
 }

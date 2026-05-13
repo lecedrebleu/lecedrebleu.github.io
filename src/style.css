@@ -336,6 +336,16 @@ a:focus {
   min-width: 200px;
 }
 
+.post-list-item-image img {
+  height: auto;
+  width: 200px;
+}
+
+.blog-post img {
+  height: auto;
+  max-width: 100%;
+}
+
 .header-link-home {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
@@ -370,10 +380,6 @@ a:focus {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
-}
-
-.gatsby-highlight {
-  margin-bottom: var(--spacing-8);
 }
 
 /* Media queries */
