@@ -18,8 +18,9 @@
     "@types/node": "^24.10.2",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
-    "gh-pages": "^6.3.0",
     "prettier": "^2.8.8",
+    "sharp": "^0.34.5",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3"
   },
   "homepage": "https://lecedrebleu.github.io/",
@@ -30,13 +31,13 @@
     "url": "git+https://github.com/lecedrebleu/lecedrebleu.github.io.git"
   },
   "scripts": {
-    "build": "next build",
+    "build": "npm run generate-thumbnails && next build",
     "clean": "rm -rf .next out",
-    "deploy": "npm run build && gh-pages -d out",
-    "develop": "next dev",
-    "dev": "next dev",
+    "develop": "npm run dev",
+    "dev": "npm run generate-thumbnails && next dev",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "next dev",
+    "generate-thumbnails": "node --import tsx scripts/generate-thumbnails.ts",
+    "start": "npm run dev",
     "test": "npm run build"
   }
 }

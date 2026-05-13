@@ -21,6 +21,7 @@ export interface EventPost {
   html: string;
   excerpt: string;
   imagePath?: string;
+  thumbnailPath?: string;
 }
 
 function stripHtml(value: string) {
@@ -69,6 +70,9 @@ export function getAllEvents() {
         excerpt: prune(stripHtml(html)),
         imagePath: frontmatter.image
           ? `/events/${slug}/${frontmatter.image}`
+          : undefined,
+        thumbnailPath: frontmatter.image
+          ? `/events/${slug}/thumbnail.webp`
           : undefined,
       };
     })

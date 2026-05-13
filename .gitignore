@@ -36,6 +36,7 @@ test/**/public
 .next/
 out/
 .cache/
+public/events/*/thumbnail.webp
 node_modules/
 __diff_output__/
 .netlify

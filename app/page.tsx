@@ -80,10 +80,13 @@ function EventItem({ post }: { post: EventPost }) {
 
   return (
     <article className="post-list-item-container">
-      {post.imagePath && (
+      {post.thumbnailPath && (
         <div className="post-list-item-image">
           <Link href={`/${post.slug}/`}>
-            <img src={post.imagePath} alt={`Affiche de l'événement ${title}`} />
+            <img
+              src={post.thumbnailPath}
+              alt={`Affiche de l'événement ${title}`}
+            />
           </Link>
         </div>
       )}

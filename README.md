@@ -20,6 +20,9 @@ filename in frontmatter:
 image: affiche.jpg
 ```
 
+Homepage thumbnails are generated automatically from event posters during
+`npm run dev` and `npm run build`.
+
 Static files such as agenda `.ics` files, `robots.txt`, favicon, logos, and
 event images live directly in `public/`.
 
