@@ -6,7 +6,7 @@
   "author": "Witold <witoldwrob@protonmail.com>",
   "dependencies": {
     "@fontsource-variable/montserrat": "^5.0.17",
-    "@fontsource/merriweather": "^5.2.11",
+    "@fontsource/merriweather": "^5.3.0",
     "gray-matter": "^4.0.3",
     "marked": "^16.4.2",
     "next": "^16.2.9",
