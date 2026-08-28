@@ -10,7 +10,7 @@ Gangbé Kpo Ninon, formation bretonne béninoise, afro beat, jazz béninois, reg
 suivi d’un DJ set de Chad Kou et de sa très fine collection de vinyles,
 de quoi amener du soleil en plein coeur de l’hiver !
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XX4_JDF33YA?si=vxmvEDHOnMavwbyi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XX4_JDF33YA?si=vxmvEDHOnMavwbyi" title="Gangbé Kpo & Ninon Valder - extrait vidéo" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 20h00 : Ouverture des portes.<br>
 Prix libre (conseillé 10€)<br>

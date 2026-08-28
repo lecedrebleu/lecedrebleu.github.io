@@ -66,52 +66,70 @@ export default async function EventPage({ params }: EventPageProps) {
         itemScope
         itemType="http://schema.org/Article"
       >
-        <header>
+        <header className="blog-post-header">
+          <div className="blog-post-meta">
+            <time dateTime={post.frontmatter.date}>
+              {formatter.format(new Date(post.frontmatter.date))}
+            </time>
+            {post.frontmatter.tags.length > 0 && (
+              <p>{post.frontmatter.tags.join(" · ")}</p>
+            )}
+          </div>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{formatter.format(new Date(post.frontmatter.date))}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{
-            __html: post.html || post.frontmatter.description || "",
-          }}
-          itemProp="articleBody"
-        />
-        <br />
-        {post.frontmatter.reservationEnabled && (
-          <p>
-            <strong>Réservation conseillée: </strong>
-            <a href="mailto:contact@lecedrebleu-px.fr">
-              contact@lecedrebleu-px.fr
-            </a>
-          </p>
-        )}
-
-        <br />
-        {post.imagePath && <img src={post.imagePath} alt="Affiche" />}
-        <hr />
-        <footer />
+        <div className="blog-post-layout">
+          {post.imagePath && (
+            <figure className="blog-post-poster">
+              <img
+                src={post.imagePath}
+                alt={`Affiche de l’événement ${post.frontmatter.title}`}
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          )}
+          <div className="blog-post-main">
+            <section
+              className="blog-post-body"
+              dangerouslySetInnerHTML={{
+                __html: post.html || post.frontmatter.description || "",
+              }}
+              itemProp="articleBody"
+            />
+            {post.frontmatter.reservationEnabled && (
+              <p className="reservation-note">
+                <strong>Réservation conseillée: </strong>
+                <a href="mailto:contact@lecedrebleu-px.fr">
+                  contact@lecedrebleu-px.fr
+                </a>
+              </p>
+            )}
+          </div>
+        </div>
       </article>
-      <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-            listStyle: "none",
-            padding: 0,
-          }}
-        >
+      <nav className="blog-post-nav" aria-label="Événements adjacents">
+        <ul>
           <li>
             {previous && (
-              <Link href={`/${previous.slug}/`} rel="prev">
-                &lt; {previous.frontmatter.title}
+              <Link
+                href={`/${previous.slug}/`}
+                rel="prev"
+                aria-label={`Événement précédent : ${previous.frontmatter.title}`}
+              >
+                <span aria-hidden="true">←</span>
+                <span>{previous.frontmatter.title}</span>
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link href={`/${next.slug}/`} rel="next">
-                {next.frontmatter.title} &gt;
+              <Link
+                href={`/${next.slug}/`}
+                rel="next"
+                aria-label={`Événement suivant : ${next.frontmatter.title}`}
+              >
+                <span>{next.frontmatter.title}</span>
+                <span aria-hidden="true">→</span>
               </Link>
             )}
           </li>

@@ -16,13 +16,13 @@ Entre leurs mains, violons, alto et violoncelle peuvent prendre des airs de guit
 
 ## Écouter
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ra31ZYsh7O4" title="Les Enfants d’Icare - extrait vidéo 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ra31ZYsh7O4" title="Les Enfants d’Icare - extrait vidéo 1" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VC8XcDluSO0" title="Les Enfants d’Icare - extrait vidéo 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VC8XcDluSO0" title="Les Enfants d’Icare - extrait vidéo 2" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7RmtYfCE5yM" title="Les Enfants d’Icare - extrait vidéo 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/7RmtYfCE5yM" title="Les Enfants d’Icare - extrait vidéo 3" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3863503557/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://lesenfantsdicare.bandcamp.com/album/hum-ma-2">Hum-Ma de Les Enfants d&#39;Icare</a></iframe>
+<iframe style="border: 0; width: 400px; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=3863503557/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" title="Écouter Hum-Ma de Les Enfants d’Icare sur Bandcamp" loading="lazy" seamless><a href="https://lesenfantsdicare.bandcamp.com/album/hum-ma-2">Hum-Ma de Les Enfants d&#39;Icare</a></iframe>
 
 ## Infos pratiques
 

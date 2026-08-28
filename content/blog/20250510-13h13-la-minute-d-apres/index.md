@@ -16,7 +16,7 @@ Spectacle tout public, pensé aussi pour ouvrir les portes du rap à celles et c
 
 Drôle et doux, ça touche, ça réconforte — et ça fait du bien.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v4XUnVO1w2M?si=pbFIVpb5UuXBACWe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v4XUnVO1w2M?si=pbFIVpb5UuXBACWe" title="13 h 13, la minute d’après - extrait vidéo" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Tarif
 
