@@ -13,7 +13,7 @@ interface ThumbnailFailure {
   error: unknown;
 }
 
-const thumbnailWidth = 200;
+const thumbnailWidth = 720;
 const thumbnailFilename = "thumbnail.webp";
 const rootDirectory = process.cwd();
 const contentDirectory = path.join(rootDirectory, "content", "blog");
@@ -42,7 +42,7 @@ async function generateThumbnail(slug: string) {
   const thumbnailPath = path.join(
     publicEventsDirectory,
     slug,
-    thumbnailFilename,
+    thumbnailFilename
   );
 
   await fs.access(posterPath);
@@ -51,7 +51,7 @@ async function generateThumbnail(slug: string) {
       width: thumbnailWidth,
       withoutEnlargement: true,
     })
-    .webp({ quality: 100 })
+    .webp({ quality: 84 })
     .toFile(thumbnailPath);
 
   return true;
