@@ -993,6 +993,36 @@ main {
   margin-top: 0.3rem;
 }
 
+.practice-page-facts .practice-page-fact-rates {
+  grid-template-columns: 1fr;
+}
+
+.practice-page-rates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.practice-page-rates li {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0.45rem 0;
+}
+
+.practice-page-rates li + li {
+  border-top: 1px solid var(--line);
+}
+
+.practice-page-rates strong {
+  color: var(--cobalt);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
 .practice-page-facts .practice-page-fact-contact {
   grid-template-columns: 1fr;
 }

@@ -14,6 +14,10 @@ export interface PracticeActivityDetail {
       href?: string;
     };
   };
+  rates: {
+    label: string;
+    price: string;
+  }[];
   paragraphs: string[];
   dates?: {
     label: string;
@@ -59,6 +63,20 @@ export const practiceActivities: PracticeActivityDetail[] = [
     cardDescription:
       "Découvrir l’instrument, reprendre après une pause ou approfondir son jeu : les séances s’adaptent au niveau, aux envies et aux morceaux de chacun. Technique, son, improvisation et plaisir de jouer avancent ensemble.",
     contact: clementContact,
+    rates: [
+      { label: "Cours individuel · 45 min", price: "30 €" },
+      { label: "Cours individuel · 1 h", price: "40 €" },
+      { label: "Cours en binôme · 1 h", price: "30 €" },
+      { label: "Cours en binôme · 1 h 30", price: "40 €" },
+      {
+        label: "Carnet individuel · 10 cours de 45 min + 1 cours offert",
+        price: "295 €",
+      },
+      {
+        label: "Carnet individuel · 10 cours d’1 h + 1 cours offert",
+        price: "395 €",
+      },
+    ],
     paragraphs: [
       "Envie de découvrir le saxophone, de reprendre après quelques années ou simplement de jouer les morceaux qui vous font vibrer ? Clément « Babours » Moret propose des cours de saxophone au Cèdre bleu de Pont-Croix, ouverts à tous !",
       "Débutant complet ou musicien déjà expérimenté, chacun peut avancer à son rythme dans une ambiance conviviale et détendue. Les cours mêlent apprentissage de l’instrument, technique, musicalité et surtout… plaisir de jouer !",
@@ -78,6 +96,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
     cardDescription:
       "Un atelier de pratique collective pour apprendre à jouer ensemble, développer l’écoute et le rythme, et faire vivre un répertoire entraînant dans et hors les murs.",
     contact: clementContact,
+    rates: [{ label: "Atelier collectif · 1 h 30", price: "15 €" }],
     paragraphs: [
       "Envie de jouer en groupe, de faire du bruit — mais du joli bruit ! — et surtout de partager le plaisir de la musique ? Cet atelier propose de se retrouver autour d’un répertoire de musiques qui vous souffle dans les oreilles.",
       "L’objectif : apprendre à jouer ensemble, développer l’écoute et le sens du rythme, découvrir des morceaux entraînants et, pourquoi pas, aller faire résonner la musique en dehors des murs du Cèdre bleu !",
@@ -98,6 +117,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
     cardDescription:
       "Un cadre bienveillant pour prendre confiance avant une jam : comprendre une grille, trouver sa place, écouter le groupe et construire une improvisation à partir de quelques notes.",
     contact: clementContact,
+    rates: [{ label: "Atelier collectif · 1 h 30", price: "15 €" }],
     paragraphs: [
       "Vous aimeriez vous lancer dans une jam session, mais vous ne savez jamais quoi jouer quand les autres commencent à improviser ? Cet atelier est fait pour vous !",
       "L’objectif est de prendre confiance dans l’improvisation et d’apprendre à jouer avec les autres, dans un cadre bienveillant où le droit à l’erreur fait partie du jeu.",
@@ -118,6 +138,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
     cardDescription:
       "Un morceau est appris à l’oreille puis arrangé selon le groupe présent. On travaille la pulsation, l’écoute, la création de parties, l’improvisation et l’arrangement collectif.",
     contact: nickContact,
+    rates: [{ label: "Atelier collectif · 1 h 30", price: "15 €" }],
     dates: {
       label: "Automne 2026",
       items: [
@@ -164,6 +185,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
     cardDescription:
       "Un atelier de solfège sans partition pour développer l’oreille et l’audiation : chant, mémoire mélodique, intervalles, modes, jeux d’improvisation et passage de la voix à l’instrument.",
     contact: nickContact,
+    rates: [{ label: "Atelier collectif · 1 h 30", price: "15 €" }],
     dates: {
       label: "Automne 2026",
       items: [

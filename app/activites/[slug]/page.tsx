@@ -87,6 +87,19 @@ export default async function PracticeActivityPage({
                   </dd>
                 </div>
               )}
+              <div className="practice-page-fact-rates">
+                <dt>Tarifs à la séance</dt>
+                <dd>
+                  <ul className="practice-page-rates">
+                    {activity.rates.map((rate) => (
+                      <li key={rate.label}>
+                        <span>{rate.label}</span>
+                        <strong>{rate.price}</strong>
+                      </li>
+                    ))}
+                  </ul>
+                </dd>
+              </div>
               <div>
                 <dt>Pour qui</dt>
                 <dd>{activity.audience}</dd>
