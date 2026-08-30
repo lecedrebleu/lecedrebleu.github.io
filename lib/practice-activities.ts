@@ -7,6 +7,13 @@ export interface PracticeActivityDetail {
   description: string;
   cardDescription: string;
   paragraphs: string[];
+  dates?: {
+    label: string;
+    items: {
+      dateTime: string;
+      label: string;
+    }[];
+  };
   topics?: {
     title: string;
     items: string[];
@@ -82,6 +89,19 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Apprendre à l’oreille, arranger et jouer en groupe autour d’un morceau partagé.",
     cardDescription:
       "Un morceau est appris à l’oreille puis arrangé selon le groupe présent. On travaille la pulsation, l’écoute, la création de parties, l’improvisation et l’arrangement collectif.",
+    dates: {
+      label: "Automne 2026",
+      items: [
+        { dateTime: "2026-09-02", label: "Mercredi 2 septembre" },
+        { dateTime: "2026-09-16", label: "Mercredi 16 septembre" },
+        { dateTime: "2026-09-30", label: "Mercredi 30 septembre" },
+        { dateTime: "2026-10-21", label: "Mercredi 21 octobre" },
+        { dateTime: "2026-11-04", label: "Mercredi 4 novembre" },
+        { dateTime: "2026-11-18", label: "Mercredi 18 novembre" },
+        { dateTime: "2026-12-02", label: "Mercredi 2 décembre" },
+        { dateTime: "2026-12-16", label: "Mercredi 16 décembre" },
+      ],
+    },
     paragraphs: [
       "Envie de jouer avec d’autres guitaristes, de découvrir de nouveaux morceaux et de développer votre jeu en groupe ?",
       "Un mercredi sur deux cet automne, La guitare en ensemble propose de se retrouver au Cèdre bleu autour d’un morceau appris à l’oreille, puis arrangé ensemble selon les personnes et les instruments présents.",
@@ -114,6 +134,18 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Un atelier de solfège sans partition pour développer l’oreille, l’audiation et la liberté musicale.",
     cardDescription:
       "Un atelier de solfège sans partition pour développer l’oreille et l’audiation : chant, mémoire mélodique, intervalles, modes, jeux d’improvisation et passage de la voix à l’instrument.",
+    dates: {
+      label: "Automne 2026",
+      items: [
+        { dateTime: "2026-09-09", label: "Mercredi 9 septembre" },
+        { dateTime: "2026-09-23", label: "Mercredi 23 septembre" },
+        { dateTime: "2026-10-07", label: "Mercredi 7 octobre" },
+        { dateTime: "2026-10-28", label: "Mercredi 28 octobre" },
+        { dateTime: "2026-11-11", label: "Mercredi 11 novembre" },
+        { dateTime: "2026-11-25", label: "Mercredi 25 novembre" },
+        { dateTime: "2026-12-09", label: "Mercredi 9 décembre" },
+      ],
+    },
     paragraphs: [
       "Vous aimeriez mieux jouer à l’oreille ? Improviser plus librement ? Mieux comprendre les mélodies et leur structure ?",
       "Le Chant Intérieur est un atelier de solfège sans partition, consacré à l’écoute, à l’intériorisation, au chant et, pour les instrumentistes, au passage de la voix à l’instrument — sans recours à la notation.",

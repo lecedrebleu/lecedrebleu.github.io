@@ -71,6 +71,23 @@ export default async function PracticeActivityPage({
                 <dt>Quand</dt>
                 <dd>{activity.schedule}</dd>
               </div>
+              {activity.dates && (
+                <div className="practice-page-fact-dates">
+                  <dt>Dates</dt>
+                  <dd>
+                    <p className="practice-page-dates-label">
+                      {activity.dates.label}
+                    </p>
+                    <ul className="practice-page-dates">
+                      {activity.dates.items.map((date) => (
+                        <li key={date.dateTime}>
+                          <time dateTime={date.dateTime}>{date.label}</time>
+                        </li>
+                      ))}
+                    </ul>
+                  </dd>
+                </div>
+              )}
               <div>
                 <dt>Pour qui</dt>
                 <dd>{activity.audience}</dd>
