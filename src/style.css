@@ -967,6 +967,32 @@ main {
   margin: 0;
 }
 
+.practice-page-facts .practice-page-fact-dates {
+  grid-template-columns: 1fr;
+}
+
+.practice-page-dates-label {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+}
+
+.practice-page-dates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.practice-page-dates li {
+  margin: 0;
+}
+
+.practice-page-dates li + li {
+  margin-top: 0.3rem;
+}
+
 .practice-page-body {
   font-size: clamp(1rem, 1.3vw, 1.1rem);
   max-width: 52rem;
