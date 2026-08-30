@@ -6,6 +6,14 @@ export interface PracticeActivityDetail {
   audience: string;
   description: string;
   cardDescription: string;
+  contact: {
+    email: string;
+    phone: {
+      label: string;
+      display: string;
+      href?: string;
+    };
+  };
   paragraphs: string[];
   dates?: {
     label: string;
@@ -22,6 +30,23 @@ export interface PracticeActivityDetail {
   closing?: string;
 }
 
+const clementContact: PracticeActivityDetail["contact"] = {
+  email: "babours.saxophone@gmail.com",
+  phone: {
+    label: "Téléphone",
+    display: "07 69 70 31 87",
+    href: "tel:+33769703187",
+  },
+};
+
+const nickContact: PracticeActivityDetail["contact"] = {
+  email: "mail@nick-morrison.com",
+  phone: {
+    label: "SMS",
+    display: "06 60 64 23",
+  },
+};
+
 export const practiceActivities: PracticeActivityDetail[] = [
   {
     slug: "cours-de-saxophone",
@@ -33,6 +58,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Des cours de saxophone adaptés au niveau, aux envies et aux morceaux de chacun.",
     cardDescription:
       "Découvrir l’instrument, reprendre après une pause ou approfondir son jeu : les séances s’adaptent au niveau, aux envies et aux morceaux de chacun. Technique, son, improvisation et plaisir de jouer avancent ensemble.",
+    contact: clementContact,
     paragraphs: [
       "Envie de découvrir le saxophone, de reprendre après quelques années ou simplement de jouer les morceaux qui vous font vibrer ? Clément « Babours » Moret propose des cours de saxophone au Cèdre bleu de Pont-Croix, ouverts à tous !",
       "Débutant complet ou musicien déjà expérimenté, chacun peut avancer à son rythme dans une ambiance conviviale et détendue. Les cours mêlent apprentissage de l’instrument, technique, musicalité et surtout… plaisir de jouer !",
@@ -51,6 +77,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Un atelier pour jouer ensemble et faire vivre un répertoire de musiques entraînantes.",
     cardDescription:
       "Un atelier de pratique collective pour apprendre à jouer ensemble, développer l’écoute et le rythme, et faire vivre un répertoire entraînant dans et hors les murs.",
+    contact: clementContact,
     paragraphs: [
       "Envie de jouer en groupe, de faire du bruit — mais du joli bruit ! — et surtout de partager le plaisir de la musique ? Cet atelier propose de se retrouver autour d’un répertoire de musiques qui vous souffle dans les oreilles.",
       "L’objectif : apprendre à jouer ensemble, développer l’écoute et le sens du rythme, découvrir des morceaux entraînants et, pourquoi pas, aller faire résonner la musique en dehors des murs du Cèdre bleu !",
@@ -70,6 +97,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Un cadre bienveillant pour prendre confiance dans l’improvisation et le jeu collectif.",
     cardDescription:
       "Un cadre bienveillant pour prendre confiance avant une jam : comprendre une grille, trouver sa place, écouter le groupe et construire une improvisation à partir de quelques notes.",
+    contact: clementContact,
     paragraphs: [
       "Vous aimeriez vous lancer dans une jam session, mais vous ne savez jamais quoi jouer quand les autres commencent à improviser ? Cet atelier est fait pour vous !",
       "L’objectif est de prendre confiance dans l’improvisation et d’apprendre à jouer avec les autres, dans un cadre bienveillant où le droit à l’erreur fait partie du jeu.",
@@ -89,6 +117,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Apprendre à l’oreille, arranger et jouer en groupe autour d’un morceau partagé.",
     cardDescription:
       "Un morceau est appris à l’oreille puis arrangé selon le groupe présent. On travaille la pulsation, l’écoute, la création de parties, l’improvisation et l’arrangement collectif.",
+    contact: nickContact,
     dates: {
       label: "Automne 2026",
       items: [
@@ -134,6 +163,7 @@ export const practiceActivities: PracticeActivityDetail[] = [
       "Un atelier de solfège sans partition pour développer l’oreille, l’audiation et la liberté musicale.",
     cardDescription:
       "Un atelier de solfège sans partition pour développer l’oreille et l’audiation : chant, mémoire mélodique, intervalles, modes, jeux d’improvisation et passage de la voix à l’instrument.",
+    contact: nickContact,
     dates: {
       label: "Automne 2026",
       items: [

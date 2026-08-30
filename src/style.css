@@ -993,6 +993,23 @@ main {
   margin-top: 0.3rem;
 }
 
+.practice-page-facts .practice-page-fact-contact {
+  grid-template-columns: 1fr;
+}
+
+.practice-page-contact {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  gap: 0.35rem;
+  overflow-wrap: anywhere;
+}
+
+.practice-page-contact a {
+  min-height: 44px;
+  padding-block: 0.55rem;
+}
+
 .practice-page-body {
   font-size: clamp(1rem, 1.3vw, 1.1rem);
   max-width: 52rem;

@@ -6,7 +6,6 @@ import {
   getPracticeActivity,
   practiceActivities,
 } from "../../../lib/practice-activities";
-import { siteMetadata } from "../../../lib/site";
 
 interface PracticeActivityPageProps {
   params: Promise<{
@@ -92,10 +91,31 @@ export default async function PracticeActivityPage({
                 <dt>Pour qui</dt>
                 <dd>{activity.audience}</dd>
               </div>
+              <div className="practice-page-fact-contact">
+                <dt>Contact</dt>
+                <dd>
+                  <address className="practice-page-contact">
+                    <a href={`mailto:${activity.contact.email}`}>
+                      {activity.contact.email}
+                    </a>
+                    {activity.contact.phone.href ? (
+                      <a href={activity.contact.phone.href}>
+                        {activity.contact.phone.label} :{" "}
+                        {activity.contact.phone.display}
+                      </a>
+                    ) : (
+                      <span>
+                        {activity.contact.phone.label} :{" "}
+                        {activity.contact.phone.display}
+                      </span>
+                    )}
+                  </address>
+                </dd>
+              </div>
             </dl>
             <a
               className="button"
-              href={`mailto:${siteMetadata.contactEmail}?subject=${subject}`}
+              href={`mailto:${activity.contact.email}?subject=${subject}`}
             >
               Demander des informations
             </a>
