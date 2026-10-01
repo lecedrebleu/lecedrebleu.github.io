@@ -47,7 +47,8 @@ const nickContact: PracticeActivityDetail["contact"] = {
   email: "mail@nick-morrison.com",
   phone: {
     label: "SMS",
-    display: "06 60 64 23",
+    display: "06 60 64 23 84",
+    href: "sms:+33660642384",
   },
 };
 
