@@ -31,7 +31,7 @@ export default function ActivitiesPage() {
             <dt>
               Lundi matin<span className="schedule-time">9 h 30–10 h 30</span>
             </dt>
-            <dd>Pilates avec Franziska</dd>
+            <dd>Pilates</dd>
           </div>
           <div>
             <dt>
@@ -59,7 +59,7 @@ export default function ActivitiesPage() {
           </div>
           <div>
             <dt>Mercredi</dt>
-            <dd>Cours et ateliers de musique</dd>
+            <dd>La guitare en ensemble ou Le Chant Intérieur</dd>
           </div>
           <div>
             <dt>Un jeudi soir sur deux</dt>
