@@ -28,20 +28,34 @@ export default function ActivitiesPage() {
         </div>
         <dl className="schedule-list">
           <div>
-            <dt>Lundi matin</dt>
-            <dd>Pilates avec Franziska, 9 h 30–10 h 30</dd>
+            <dt>
+              Lundi matin<span className="schedule-time">9 h 30–10 h 30</span>
+            </dt>
+            <dd>Pilates avec Franziska</dd>
           </div>
           <div>
-            <dt>Lundi soir</dt>
-            <dd>Fanfare ou prépaJAM, 19 h 30–21 h</dd>
+            <dt>
+              Lundi soir<span className="schedule-time">19 h 30–21 h</span>
+            </dt>
+            <dd>Fanfare ou prépaJAM</dd>
           </div>
           <div>
-            <dt>Mardi soir</dt>
-            <dd>Yoga, selon le planning de la semaine</dd>
+            <dt>
+              Mardi soir<span className="schedule-time">18 h 30–20 h</span>
+            </dt>
+            <dd>Yoga</dd>
           </div>
           <div>
-            <dt>Mardi soir</dt>
-            <dd>Tango avec Lars, 20 h 30–22 h, du 10 novembre au 22 décembre 2026</dd>
+            <dt>
+              Mardi soir<span className="schedule-time">20 h 30–22 h</span>
+            </dt>
+            <dd>Tango</dd>
+          </div>
+          <div>
+            <dt>
+              Mercredi matin<span className="schedule-time">9 h–10 h 30</span>
+            </dt>
+            <dd>Yoga</dd>
           </div>
           <div>
             <dt>Mercredi</dt>
@@ -52,12 +66,16 @@ export default function ActivitiesPage() {
             <dd>LaboBal</dd>
           </div>
           <div>
-            <dt>Vendredi matin</dt>
-            <dd>Yoga, selon le planning de la semaine</dd>
+            <dt>
+              Vendredi matin<span className="schedule-time">10 h–11 h 30</span>
+            </dt>
+            <dd>Yoga</dd>
           </div>
           <div>
-            <dt>Un samedi par mois</dt>
-            <dd>Improvisation musique-danse, 10 h–12 h</dd>
+            <dt>
+              Un samedi par mois<span className="schedule-time">10 h–12 h</span>
+            </dt>
+            <dd>Improvisation musique-danse</dd>
           </div>
         </dl>
         <p className="schedule-note">
@@ -101,7 +119,9 @@ export default function ActivitiesPage() {
         <div className="movement-grid">
           <article className="movement-card tango-card" id="tango">
             <div>
-              <p className="activity-meta">Avec Lars · les mardis, 20 h 30–22 h</p>
+              <p className="activity-meta">
+                Avec Lars · les mardis, 20 h 30–22 h
+              </p>
               <h3>Cours de tango</h3>
               <a href="/activities/tango/affiche.webp">
                 <img
@@ -127,15 +147,14 @@ export default function ActivitiesPage() {
               </p>
               <p>
                 Les mardis, du <time dateTime="2026-11-10">10 novembre</time> au{" "}
-                <time dateTime="2026-12-22">22 décembre 2026</time>, de 20 h 30 à
-                22 h, au Cèdre bleu à Pont-Croix.
+                <time dateTime="2026-12-22">22 décembre 2026</time>, de 20 h 30
+                à 22 h, au Cèdre bleu à Pont-Croix.
               </p>
               <p>Participation : de 10 à 15 € par cours, selon vos moyens.</p>
               <p className="activity-links">
                 Renseignements auprès de Lars :{" "}
                 <a href="tel:+33620931005">06 20 93 10 05</a>
               </p>
-              <p>Au plaisir de vous retrouver sur la piste !</p>
             </div>
           </article>
           <article className="movement-card">
@@ -228,7 +247,8 @@ export default function ActivitiesPage() {
         <div className="movement-grid">
           <article className="movement-card">
             <p className="activity-meta">
-              Avec Mélissa · le plus souvent mardi soir et vendredi matin
+              Avec Mélissa · mardi, 18 h 30–20 h · mercredi, 9 h–10 h 30 ·
+              vendredi, 10 h–11 h 30
             </p>
             <h3>Cours de yoga</h3>
             <p>
@@ -238,9 +258,8 @@ export default function ActivitiesPage() {
               relaxation profonde.
             </p>
             <p>
-              Les créneaux sont fixés semaine après semaine. Certains cours sont
-              spécialement adaptés aux débutant·es, d’autres aux personnes plus
-              avancées.
+              Certains cours sont spécialement adaptés aux débutant·es, d’autres
+              aux personnes plus avancées.
             </p>
             <p className="activity-links">
               <a
