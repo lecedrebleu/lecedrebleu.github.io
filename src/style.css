@@ -777,6 +777,19 @@ main {
   font-size: 0.78rem;
   margin: 0.5rem 0 1rem;
 }
+
+.tango-poster {
+  display: block;
+  height: auto;
+  margin-top: 1.5rem;
+  width: 100%;
+}
+
+.tango-content > p {
+  color: var(--muted);
+  max-width: 58ch;
+}
+
 .session-dates {
   border-top: 1px solid var(--line);
   margin-top: 1rem;
@@ -1444,6 +1457,12 @@ main {
   }
   .activity-number {
     grid-row: 1 / span 5;
+  }
+  .tango-card > div {
+    grid-column: 2;
+  }
+  .tango-content {
+    margin-top: 1.5rem;
   }
   .activity-meta,
   .activity-card h3,
