@@ -496,18 +496,13 @@ main {
   object-fit: contain;
   width: 100%;
 }
-.event-card-image span {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-
 .event-card-content {
+  --event-card-padding: clamp(1.5rem, 3.5vw, 3rem);
   align-items: start;
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: clamp(1.5rem, 3.5vw, 3rem);
+  padding: var(--event-card-padding) var(--event-card-padding) 0;
 }
 
 .event-date {
@@ -535,17 +530,18 @@ main {
 
 .event-card-link {
   align-items: center;
+  align-self: stretch;
   border-top: 1px solid var(--line-strong);
   color: var(--ink);
   display: flex;
+  flex-shrink: 0;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   font-weight: 500;
-  margin: auto -3rem -3rem;
+  margin: auto calc(var(--event-card-padding) * -1) 0;
   min-height: 48px;
-  padding: 1rem 3rem;
+  padding: 1rem var(--event-card-padding);
   text-transform: uppercase;
-  width: calc(100% + 6rem);
 }
 
 .event-card-link:hover {
@@ -1272,13 +1268,6 @@ main {
   .event-grid-compact .event-card {
     grid-template-columns: minmax(9rem, 2fr) minmax(0, 5fr);
   }
-  .event-card-link {
-    margin-left: calc(clamp(1.5rem, 3.5vw, 3rem) * -1);
-    margin-right: calc(clamp(1.5rem, 3.5vw, 3rem) * -1);
-    padding-left: clamp(1.5rem, 3.5vw, 3rem);
-    padding-right: clamp(1.5rem, 3.5vw, 3rem);
-    width: calc(100% + clamp(3rem, 7vw, 6rem));
-  }
   .activity-card {
     grid-template-columns: 3rem minmax(11rem, 4fr) minmax(0, 8fr);
   }
@@ -1387,7 +1376,7 @@ main {
     padding: 0.35rem;
   }
   .event-card-content {
-    padding: 1rem;
+    --event-card-padding: 1rem;
   }
   .event-card-content h3,
   .event-grid-compact .event-card-content h3 {
@@ -1399,10 +1388,8 @@ main {
     font-size: 0.75rem;
   }
   .event-card-link {
-    margin: auto -1rem -1rem;
     min-height: 44px;
-    padding: 0.75rem 1rem;
-    width: calc(100% + 2rem);
+    padding-block: 0.75rem;
   }
 
   .newsletter-card,
@@ -1602,12 +1589,7 @@ main {
     grid-template-columns: 6.25rem minmax(0, 1fr);
   }
   .event-card-content {
-    padding: 0.85rem;
-  }
-  .event-card-link {
-    margin: auto -0.85rem -0.85rem;
-    padding-inline: 0.85rem;
-    width: calc(100% + 1.7rem);
+    --event-card-padding: 0.85rem;
   }
   .session-dates ul {
     grid-template-columns: 1fr;

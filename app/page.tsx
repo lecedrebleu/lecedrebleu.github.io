@@ -28,7 +28,6 @@ export default function HomePage() {
     <Layout isRootPath>
       <section className="home-hero">
         <div className="home-hero-heading">
-          <p className="eyebrow">Pont-Croix · Cap Sizun</p>
           <h1>Le Cèdre bleu</h1>
         </div>
         <div className="home-hero-image">
@@ -103,15 +102,13 @@ function EventCard({ post }: { post: EventPost }) {
   return (
     <article className="event-card">
       <div className="event-card-image">
-        {post.thumbnailPath ? (
+        {post.thumbnailPath && (
           <img
             src={post.thumbnailPath}
             alt={`Affiche de l’événement ${title}`}
             loading="lazy"
             decoding="async"
           />
-        ) : (
-          <span aria-hidden="true">Cèdre bleu</span>
         )}
       </div>
       <div className="event-card-content">
@@ -127,9 +124,9 @@ function EventCard({ post }: { post: EventPost }) {
         <Link
           className="event-card-link"
           href={`/${post.slug}/`}
-          aria-label={`Découvrir ${title}`}
+          aria-label={`Voir ${title}`}
         >
-          Découvrir →
+          Voir →
         </Link>
       </div>
     </article>

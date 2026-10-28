@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Le Cedre bleu//Agenda//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261031-jazz-up-your-blues-20261031@lecedrebleu-px.fr
+DTSTAMP:20261028T125219Z
+DTSTART;TZID=Europe/Paris:20261031T130000
+DTEND;TZID=Europe/Paris:20261031T170000
+SUMMARY:Jazz Up Your Blues - samedi
+LOCATION:Le Cèdre bleu\, 24 bis boulevard du Général-de-Gaulle\, 29790 P
+ ont-Croix
+DESCRIPTION:Stage avec Nick Morrison et Clément « Babours » Moret. Les 3
+ 1 octobre et 1er novembre\, de 13 h à 17 h chaque jour. Tous instruments 
+ \; première expérience du jeu en groupe recommandée. 40 € pour un jou
+ r \; 70 € pour les deux jours. Inscription : mail@nick-morrison.com ou b
+ abours.saxophone@gmail.com.
+URL:https://lecedrebleu-px.fr/20261031-jazz-up-your-blues/
+END:VEVENT
+BEGIN:VEVENT
+UID:20261031-jazz-up-your-blues-20261101@lecedrebleu-px.fr
+DTSTAMP:20261028T125219Z
+DTSTART;TZID=Europe/Paris:20261101T130000
+DTEND;TZID=Europe/Paris:20261101T170000
+SUMMARY:Jazz Up Your Blues - dimanche
+LOCATION:Le Cèdre bleu\, 24 bis boulevard du Général-de-Gaulle\, 29790 P
+ ont-Croix
+DESCRIPTION:Stage avec Nick Morrison et Clément « Babours » Moret. Les 3
+ 1 octobre et 1er novembre\, de 13 h à 17 h chaque jour. Tous instruments 
+ \; première expérience du jeu en groupe recommandée. 40 € pour un jou
+ r \; 70 € pour les deux jours. Inscription : mail@nick-morrison.com ou b
+ abours.saxophone@gmail.com.
+URL:https://lecedrebleu-px.fr/20261031-jazz-up-your-blues/
+END:VEVENT
+END:VCALENDAR
