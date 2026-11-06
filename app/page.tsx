@@ -16,12 +16,14 @@ const formatter = new Intl.DateTimeFormat("fr-FR", {
 
 export default function HomePage() {
   const posts = getEventsByDateDescending(10);
-  const now = new Date();
+  // Events stay in the programme for the whole day they take place.
+  const startOfToday = new Date();
+  startOfToday.setHours(0, 0, 0, 0);
   const futureEvents = posts
-    .filter((post) => new Date(post.frontmatter.date) >= now)
+    .filter((post) => new Date(post.frontmatter.date) >= startOfToday)
     .reverse();
   const pastEvents = posts
-    .filter((post) => new Date(post.frontmatter.date) < now)
+    .filter((post) => new Date(post.frontmatter.date) < startOfToday)
     .slice(0, 4);
 
   return (

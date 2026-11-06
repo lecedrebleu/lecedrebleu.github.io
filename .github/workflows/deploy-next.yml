@@ -5,6 +5,10 @@ on:
   push:
     branches: ["main"]
 
+  # Rebuilds every night so past events leave the programme
+  schedule:
+    - cron: "15 2 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
