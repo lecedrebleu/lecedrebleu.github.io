@@ -1,15 +1,18 @@
 ---
 title: "Chillipili Sound System · Clôture de Curieux Mexique"
 date: "2026-11-27T20:00:00"
-tags: ["DJ-SONIDERO", "CURIEUX MEXIQUE"]
-shortDescription: "Un set DJ-sonidero dansant, entre musiques traditionnelles, touches électroniques et sélection éclectique, pour clôturer Curieux Mexique."
-description: "Chillipili Sound System clôture Curieux Mexique au Cèdre bleu le 27 novembre 2026. Ouverture des portes à 20 h, entrée gratuite."
+tags: ["CURIEUX MEXIQUE", "LOTERIA", "DJ SONIDERO"]
+shortDescription: "Loteria comme au Mexique, puis set DJ-sonidero dansant avec Chillipili Sound System, pour clôturer Curieux Mexique."
+description: "Chillipili Sound System clôture Curieux Mexique au Cèdre bleu le 27 novembre 2026. Ouverture des portes à 20h, loteria à 20h30, sonidero à 22h, entrée gratuite."
 reservationEnabled: false
+image: affiche.png
 ---
 
-Pour clôturer le festival Curieux Mexique, place à Chillipili Sound System !
+Pour clôturer le festival Curieux Mexique : loteria, sonidero et tacos !
 
-Un set DJ-sonidero dansant, où musiques traditionnelles, touches électroniques et sélection éclectique se rencontrent.
+On commence par une loteria comme au Mexique, le jeu de cartes et de hasard qu’on joue en famille et entre amis. Puis Chillipili Sound System prend le relais avec un set DJ-sonidero dansant.
+
+Restauration sur place : tacos avec viande et végétariens.
 
 <div class="event-actions">
   <a class="event-button event-button-secondary" href="/agenda/20261127-chillipili-sound-system.ics">Ajouter à mon agenda</a>
@@ -19,7 +22,9 @@ Un set DJ-sonidero dansant, où musiques traditionnelles, touches électroniques
 
 Vendredi 27 novembre 2026.
 
-Ouverture des portes à 20 h.
+- 20h : ouverture des portes
+- 20h30 - 21h30 : loteria
+- 22h – minuit : sonidero avec Chillipili Sound System
 
 Entrée gratuite.
 

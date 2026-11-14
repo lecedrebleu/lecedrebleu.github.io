@@ -22,13 +22,15 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:20261127-chillipili-sound-system@lecedrebleu-px.fr
-DTSTAMP:20261028T125219Z
+DTSTAMP:20261113T120000Z
 DTSTART;TZID=Europe/Paris:20261127T200000
+DTEND;TZID=Europe/Paris:20261128T000000
 SUMMARY:Chillipili Sound System · Clôture de Curieux Mexique
 LOCATION:Le Cèdre bleu\, 24 bis boulevard du Général-de-Gaulle\, 29790 P
  ont-Croix
-DESCRIPTION:Set DJ-sonidero pour clôturer Curieux Mexique. Ouverture des p
- ortes à 20 h. Entrée gratuite.
+DESCRIPTION:Clôture de Curieux Mexique. Ouverture des portes à 20 h. Lote
+ ria de 20 h 30 à 21 h 30\, puis sonidero avec Chillipili Sound System de
+  22 h à minuit. Entrée gratuite.
 URL:https://lecedrebleu-px.fr/20261127-chillipili-sound-system/
 END:VEVENT
 END:VCALENDAR
