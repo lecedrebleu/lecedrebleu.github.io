@@ -229,13 +229,19 @@ export default function ActivitiesPage() {
                   <time dateTime="2026-11-07">7 novembre 2026</time>
                 </li>
                 <li>
-                  <time dateTime="2026-12-12">12 décembre 2026</time>
+                  <time dateTime="2026-12-05">5 décembre 2026</time>
                 </li>
                 <li>
                   <time dateTime="2027-01-09">9 janvier 2027</time>
                 </li>
               </ul>
             </div>
+            <p className="activity-links">
+              Contact :{" "}
+              <a href="mailto:pommier.airelle@gmail.com">
+                pommier.airelle@gmail.com
+              </a>
+            </p>
           </article>
         </div>
       </section>
